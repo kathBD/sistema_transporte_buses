@@ -16,6 +16,8 @@ Sistema de gestión de transporte intemunicipal Bogotá
 - (available at: [localhost:8080](http://localhost:8080))
   ```
 
+## Peticiones HTTP
+
 - Get listar buses
 
   ```
