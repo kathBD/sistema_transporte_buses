@@ -19,12 +19,11 @@ public class TrayectoBusService implements ICompraBoletoTrayectoService  {
 
 
     @Override
-    public void registrarCompra(TrayectoBus trayectoBusComprado) {
-        TrayectoBus trayecto = new TrayectoBus( UUID.randomUUID().toString(), new Date().toString());
-        trayectoBusComprado.agregarDestino();
-        trayectoBusComprado.getBus();
-        trayectoBusComprado.getHorario();
-
+    public void registrarCompra(TrayectoBus trayectoBus) {
+        TrayectoBus nuevaCompra = new TrayectoBus(UUID.randomUUID().toString(), new Date().toString(),
+                trayectoBus.getBus(),
+                trayectoBus.getNumerodePasajeros(),
+                trayectoBus.getPasajeroDestino());
 
     }
 
@@ -33,18 +32,15 @@ public class TrayectoBusService implements ICompraBoletoTrayectoService  {
         Pasajero nuevoPasajero = new Pasajero(UUID.randomUUID().toString(), new Date().toString(),
                 pasajero.getNombre(),
                 pasajero.getApellido(),
-                pasajero.getNumeroTelefono(),
-                pasajero.getDestino());
+                pasajero.getNumeroTelefono());
 
     }
+
 
     @Override
     public void registrarDestino() {
         this.registrarDestino();
     }
-
-
-
 
 
 

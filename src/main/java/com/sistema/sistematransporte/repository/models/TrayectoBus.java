@@ -23,7 +23,7 @@ public class TrayectoBus extends Ruta {
        this.destino = destino;
     }
 
-    public TrayectoBus(String id, String date) {
+    public TrayectoBus(String id, String date, Bus bus, int numerodePasajeros, String pasajeroDestino) {
         this.id = id;
         this.date = date;
     }

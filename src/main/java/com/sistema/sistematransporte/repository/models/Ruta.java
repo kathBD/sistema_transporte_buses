@@ -3,6 +3,7 @@ package com.sistema.sistematransporte.repository.models;
 
 
 public abstract class Ruta {
+    protected String pasajeroDestino;
     private  String id;
     private String viajeRealizado;
 
@@ -33,6 +34,11 @@ public abstract class Ruta {
         this.viajeRealizado = viajeRealizado;
     }
 
+    public String getPasajeroDestino() {
+        return pasajeroDestino;
+    }
 
-
+    public void setPasajeroDestino(String pasajeroDestino) {
+        this.pasajeroDestino = pasajeroDestino;
+    }
 }

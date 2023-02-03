@@ -11,7 +11,7 @@ public interface IBusService {
      void obtenerDestino();
      void disminuirCapacidad();
 
-     void agregarBus();
+     Bus agregarBus(Bus bus);
 
 
 }

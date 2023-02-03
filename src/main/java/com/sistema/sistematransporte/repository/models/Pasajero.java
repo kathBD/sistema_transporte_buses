@@ -10,6 +10,7 @@ public class Pasajero extends Ruta {
     private String apellido;
     private String numeroTelefono;
 
+    private String pasajerpDestino;
     private List<TrayectoBus> viajesRealizados;
 
 
@@ -18,8 +19,10 @@ public class Pasajero extends Ruta {
         this.nombre = nombre;
         this.apellido = apellido;
         this.numeroTelefono = numeroTelefono;
-        viajesRealizados = new ArrayList<TrayectoBus>();
+        this.pasajeroDestino = pasajeroDestino;
+
     }
+
 
 
     public String getId() {

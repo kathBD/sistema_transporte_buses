@@ -9,9 +9,12 @@ public class Destino {
     private String recorrido;
 
 
-    public Destino(String id, String horaSalida) {
+
+    public Destino(String id, String horaSalida, String recorrido) {
         this.id = id;
         this.horaSalida = horaSalida;
+        this.recorrido = recorrido;
+
     }
 
     public String getId() {
@@ -36,5 +39,13 @@ public class Destino {
 
     public void setHoraSalida(String horaSalida) {
         this.horaSalida = horaSalida;
+    }
+
+    public String getRecorrido() {
+        return recorrido;
+    }
+
+    public void setRecorrido(String recorrido) {
+        this.recorrido = recorrido;
     }
 }

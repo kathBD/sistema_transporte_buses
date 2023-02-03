@@ -14,14 +14,18 @@ public class TrayectoRepository {
 
     private List<Pasajero>pasajeros;
 
+    private List<TrayectoBus>trayectoBuses;
+
 
     public TrayectoRepository(){
         this.pasajeros = new ArrayList<>();
     }
 
-    public List<Pasajero> ObternListaPasajeros(){
-        return this.pasajeros;
+    public List<TrayectoBus> obtenerTrayecto(){
+        return this.trayectoBuses;
     }
+
+
 
     public void generarBoleto(Pasajero pasajero, TrayectoBus trayectoBus){
         trayectoBus.getBus().disminuirPuestos();
@@ -33,8 +37,6 @@ public class TrayectoRepository {
         pasajero.getApellido();
         trayectoBus.getBus();
         trayectoBus.getDate();
-        trayectoBus.getRuta();
-        trayectoBus.getHorario();
     }
   public void setPasajeros(List<Pasajero> pasajeros){
         this.pasajeros = pasajeros;

@@ -21,14 +21,15 @@ public class BusRepository {
                 '}';
     }
 
-    public void busesLista() {
-        buses = new ArrayList<>(List.of(new Bus("1", "Ejecutivo", "12", 24),
-                new Bus("2", "microbús", "24", 12),
-                new Bus("3", "Buseta", "80", 40),
-                new Bus("4", "Bus", "80", 35),
-                new Bus("5", "Buseta", "60", 40),
-                new Bus("6", "Ejecutivo", "14", 60),
-                new Bus("7", "Buseta", "90", 40)));
+    public List <Bus> busesLista() {
+        List <Bus> buses =  new  ArrayList<Bus>();
+                buses.add(new Bus("1", "Ejecutivo", "12", 24));
+                buses.add(new Bus("2", "microbús", "24", 12));
+                buses.add(new Bus("3", "Buseta", "80", 40));
+                buses.add(new Bus("4", "Bus", "80", 35));
+                buses.add(new Bus("5", "Buset2", "60", 40));
+
+       return buses;
     }
 
 
@@ -44,5 +45,6 @@ public class BusRepository {
     public void agregarBus() {
         this.agregarBus();
     }
+
 
 }

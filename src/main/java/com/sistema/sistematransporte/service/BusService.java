@@ -8,7 +8,6 @@ import com.sistema.sistematransporte.repository.models.Bus;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -25,7 +24,7 @@ public class BusService implements IBusService {
 
     @Override
     public List<Bus> obtenerBuses() {
-        return busRepository.obtenerBuses();
+        return busRepository.busesLista();
     }
 
     @Override
@@ -36,7 +35,7 @@ public class BusService implements IBusService {
 
     @Override
     public void obtenerDestino() {
-       this.obtenerDestino();
+        this.obtenerDestino();
     }
 
     @Override
@@ -45,10 +44,13 @@ public class BusService implements IBusService {
     }
 
     @Override
-    public void agregarBus() {
-       busRepository.agregarBus();
+    public Bus agregarBus(Bus bus) {
+        Bus nuevoBus = new Bus(UUID.randomUUID().toString(),
+                bus.getTipo(),
+                bus.getNumeroBus(),
+                bus.getCapacidad());
+          return nuevoBus;
     }
-
 
 
 }
