@@ -10,16 +10,19 @@ public class Pasajero extends Ruta {
     private String apellido;
     private String numeroTelefono;
 
-    private String pasajerpDestino;
-    private List<TrayectoBus> viajesRealizados;
+    private String pasajeroDestino;
+
+    private int viajesRealizados;
 
 
-    public Pasajero(String id, String nombre, String apellido, String numeroTelefono, String pasajeroDestino) {
+
+    public Pasajero(String id, String nombre, String apellido, String numeroTelefono, String pasajeroDestino, int viajesRealizados) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.numeroTelefono = numeroTelefono;
         this.pasajeroDestino = pasajeroDestino;
+        this.viajesRealizados = viajesRealizados;
 
     }
 
@@ -60,12 +63,29 @@ public class Pasajero extends Ruta {
         this.numeroTelefono = numeroTelefono;
     }
 
-    public List<TrayectoBus> getViajesRealizados() {
+    public String getPasajerpDestino() {
+        return pasajeroDestino;
+    }
+
+    public void setPasajerpDestino(String pasajerpDestino) {
+        this.pasajeroDestino = pasajerpDestino;
+    }
+
+    @Override
+    public String getPasajeroDestino() {
+        return pasajeroDestino;
+    }
+
+    @Override
+    public void setPasajeroDestino(String pasajeroDestino) {
+        this.pasajeroDestino = pasajeroDestino;
+    }
+
+    public int getViajesRealizados() {
         return viajesRealizados;
     }
 
-    public void setViajesRealizados(List<TrayectoBus> viajesRealizados) {
+    public void setViajesRealizados(int viajesRealizados) {
         this.viajesRealizados = viajesRealizados;
     }
-
 }

@@ -4,7 +4,7 @@ package com.sistema.sistematransporte.controller;
 
 import com.sistema.sistematransporte.repository.models.Bus;
 import com.sistema.sistematransporte.service.BusService;
-import jakarta.websocket.server.PathParam;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,6 +31,9 @@ public class BusController {
       return new ResponseEntity(busService.agregarBus(bus), HttpStatus.CREATED);
 
   }
+
+
+
 
 
 

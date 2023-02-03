@@ -27,12 +27,16 @@ public class TrayectoBusService implements ICompraBoletoTrayectoService  {
 
     }
 
+    public void aumentarViajes(){
+    }
+
     @Override
     public void registarPasajero(Pasajero pasajero) {
         Pasajero nuevoPasajero = new Pasajero(UUID.randomUUID().toString(), new Date().toString(),
                 pasajero.getNombre(),
                 pasajero.getApellido(),
-                pasajero.getNumeroTelefono());
+                pasajero.getNumeroTelefono(),
+                pasajero.getViajesRealizados());
 
     }
 
