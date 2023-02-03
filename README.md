@@ -27,10 +27,10 @@ Sistema de gestión de transporte intemunicipal Bogotá
   ```
   localhost:8080/sistema/pasajeros/lista
   ```
-  - Post crear buses
+  - Post crear Bus
 
   ```
-  localhost:8080/sistema/traer/buses
+ localhost:8080/sistema/crear/bus
   ```
   - Post crear pasajero
   ```
