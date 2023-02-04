@@ -18,21 +18,31 @@ Sistema de gestión de transporte intemunicipal Bogotá
 
 ## Peticiones HTTP
 
-- Get listar buses
+  - Get listar buses
 
   ```
   localhost:8080/sistema/traer/buses
+  
   ```
   - Get listar pasajeros
   ```
   localhost:8080/sistema/pasajeros/lista
+  
   ```
+  - Get listar destinos
+  ```
+  localhost:8080/sistema/traer/destinos
+  
+  ```
+  
   - Post crear Bus
 
   ```
  localhost:8080/sistema/crear/bus
+ 
   ```
   - Post crear pasajero
+  
   ```
   localhost:8080/pasajeros/crear/pasajero
   
